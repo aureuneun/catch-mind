@@ -1,0 +1,37 @@
+{
+  "name": "catch-mind",
+  "version": "1.0.0",
+  "description": "Realtime drawing game built with SocketIO, Gulp and Node",
+  "main": "index.js",
+  "repository": "https://github.com/aureuneun/catch-mind.git",
+  "author": "kec <57247368+yesky85@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babelify": "^10.0.0",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js --ignore src/assets --ignore src/static ",
+    "dev:assets": "gulp dev"
+  }
+}

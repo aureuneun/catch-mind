@@ -31,3 +31,11 @@ export const handleNewMsg = ({ message, nickname }) => {
 if (sendMsg) {
   sendMsg.addEventListener("submit", handleSendMsg);
 }
+
+export const disableChat = () => {
+  sendMsg.style.visibility = "hidden";
+};
+
+export const enableChat = () => {
+  sendMsg.style.visibility = "visible";
+};

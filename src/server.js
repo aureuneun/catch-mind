@@ -26,4 +26,4 @@ const server = app.listen(PORT, () => {
 
 const io = socketIO.listen(server);
 
-io.on(events.connection, (socket) => socketController(socket));
+io.on(events.connection, (socket) => socketController(socket, io));

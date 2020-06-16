@@ -43,6 +43,7 @@ const addPlayers = (players) => {
     }
     if (socket.id === player.id) {
       playerElement.addEventListener("click", handlePlayerClick);
+      playerElement.style.order = -1;
     }
     playerElement.innerText = `${player.nickname}: ${player.points}`;
     board.appendChild(playerElement);

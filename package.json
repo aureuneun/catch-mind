@@ -28,7 +28,7 @@
     "morgan": "^1.10.0",
     "node-sass": "^4.14.1",
     "pug": "^3.0.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/server.js --ignore src/assets --ignore src/static ",
